@@ -39,7 +39,6 @@ function Rate({ open, setOpen, farmName, farmId }) {
     mutate(data);
   }
 
-  console.log(farmName);
   return (
     <>
       {open && (

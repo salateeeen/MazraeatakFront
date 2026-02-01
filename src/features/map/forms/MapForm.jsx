@@ -3,6 +3,7 @@ import { MapPinHouse, X } from "lucide-react";
 import Input from "@/ui/form/input/Input";
 import { useNavigate } from "react-router-dom";
 import { getCurrentPosition } from "@/utils/handleLocation";
+import SelectCity from "./SelectCity";
 
 function MapForm({ color, className }) {
   const navigate = useNavigate();
@@ -16,10 +17,6 @@ function MapForm({ color, className }) {
 
   function onSubmitMap(data) {
     const params = new URLSearchParams();
-
-    if (data.farmName?.trim()) {
-      params.set("farmName", data.farmName);
-    }
 
     if (data.location) {
       params.set("location", data.location);
@@ -46,12 +43,7 @@ function MapForm({ color, className }) {
   return (
     <FormProvider {...mapForm}>
       <form className={className} onSubmit={mapForm.handleSubmit(onSubmitMap)}>
-        <Input
-          name="farm name"
-          display="column"
-          onBlur={mapForm.handleSubmit(onSubmitMap)}
-          onKeyDown={onKeyDown}
-        />
+        <SelectCity />
 
         <Input
           name="location"

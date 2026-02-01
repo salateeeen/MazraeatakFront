@@ -25,16 +25,8 @@ function BookingsCards({ isPending, data, error, isPast }) {
       {!isPending &&
         hasBookings &&
         !error &&
-        data.bookings.map(({ farm, startDate, endDate, totalPrice }, i) => (
-          <BookingCard
-            key={i}
-            farm={farm}
-            startDate={startDate}
-            endDate={endDate}
-            totalPrice={totalPrice}
-            status={"confirmed"}
-            isPast={isPast}
-          />
+        data.bookings.map((bookingCard, i) => (
+          <BookingCard bookingCard={bookingCard} key={bookingCard._id} />
         ))}
 
       {!isPending && error && <h1>{error.message}</h1>}

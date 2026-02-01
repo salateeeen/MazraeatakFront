@@ -3,12 +3,15 @@ import Button from "../button/Button";
 import Search from "../form/search/Search";
 import Account from "../account/Account";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { FormProvider, useForm } from "react-hook-form";
+import { useFarmsName } from "@/features/farms/hooks/useFarmsName";
+import Spinner from "../spinner/Spinner";
 
 function Header() {
   const [isScrolling, setIsScrolling] = useState(false);
+  const [search, setSearch] = useState("");
   const searchForm = useForm({
     defaultValues: {
       search: "",
@@ -17,6 +20,9 @@ function Header() {
   const navigate = useNavigate();
   const lacation = useLocation();
   const isHome = lacation.pathname.includes(`home`);
+  const { data, isPending, error } = useFarmsName(search);
+  const searchRef = useRef(null);
+  console.log(data);
 
   useEffect(() => {
     function handleScroll() {
@@ -57,7 +63,18 @@ function Header() {
     }
 
     navigate(`/app/farms?${params.toString()}`, { replace: false });
+    setSearch("");
     searchForm.reset();
+  }
+
+  function handleSearch(e) {
+    setSearch(e.target.value);
+  }
+
+  function handleSearchClick(id) {
+    setSearch("");
+    searchForm.reset();
+    navigate(`/app/farm/${id}`);
   }
 
   return (
@@ -73,11 +90,26 @@ function Header() {
       <FormProvider {...searchForm}>
         <form onSubmit={searchForm.handleSubmit(handleSubmit)}>
           <div
+            className={styles.container}
             is-home={isHome.toString()}
             is-scroll={isScrolling.toString()}
-            className={`${styles.search}`}
           >
-            <Search onClick={searchForm.handleSubmit(handleSubmit)} />
+            <Search
+              onChange={handleSearch}
+              onClick={searchForm.handleSubmit(handleSubmit)}
+              className={styles.search}
+              ref={searchRef}
+            >
+              {isPending && <Spinner />}
+
+              {!isPending &&
+                data?.length > 0 &&
+                data.map(({ farmName, _id }) => (
+                  <div key={_id} onClick={() => handleSearchClick(_id)}>
+                    {farmName}
+                  </div>
+                ))}
+            </Search>
           </div>
         </form>
       </FormProvider>

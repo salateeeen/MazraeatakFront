@@ -12,6 +12,7 @@ function Input({
   readOnly = false,
   required = false,
   label = true,
+  autoComplete,
   name,
   placeholder = name,
   onBlur,
@@ -38,7 +39,7 @@ function Input({
   return (
     <div className={`${styles.container} ${displaySpan}`}>
       {label && <span>{`${capitalizeFirstLetter(name)}`}</span>}
-      <div className={inputStyles.composition}>
+      <div className={`${inputStyles.composition}`}>
         <input
           className={`${inputStyles.input} ${className}`}
           type={type}
@@ -55,6 +56,7 @@ function Input({
             registerResult.onChange?.(e);
             onChange?.(e);
           }}
+          autoComplete={autoComplete}
         />
         {styledChildren}
       </div>

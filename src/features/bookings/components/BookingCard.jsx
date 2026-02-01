@@ -1,15 +1,22 @@
 import styles from "./BookingCard.module.css";
 import { formatDateTime } from "@/utils/handleDate";
 import { useState } from "react";
-import { BadgeDollarSign, Phone, Star, ArrowRight, CalendarDays } from "lucide-react";
+import {
+  BadgeDollarSign,
+  Phone,
+  Star,
+  ArrowRight,
+  CalendarDays,
+} from "lucide-react";
 import { FaLocationDot } from "react-icons/fa6";
 
 import Rate from "@/features/reviews/components/Rate";
 
-function BookingCard({ farm, startDate, endDate, totalPrice, status, isPast }) {
+function BookingCard({ bookingCard }) {
+  const { farm, startDate, endDate, totalPrice, isPast } = bookingCard;
+  const status = "confirmed"
   const [open, setOpen] = useState(false);
   const { farmName, _id: id } = farm;
-
   function handleRate(e) {
     e.stopPropagation();
     setOpen(true);
@@ -45,7 +52,7 @@ function BookingCard({ farm, startDate, endDate, totalPrice, status, isPast }) {
 
           {/* Dates */}
           <div className={styles.dates}>
-            <CalendarDays size={20}/>
+            <CalendarDays size={20} />
             <span className={styles.date}>{formatDateTime(startDate)}</span>
             <ArrowRight size={18} className={styles.arrow} />
             <span className={styles.date}>{formatDateTime(endDate)}</span>
@@ -59,7 +66,7 @@ function BookingCard({ farm, startDate, endDate, totalPrice, status, isPast }) {
 
           {/* Actions */}
           <div className={styles.actions}>
-            {isPast && (
+            {!isPast && (
               <button className={styles.rateBtn} onClick={handleRate}>
                 <Star size={18} />
                 Rate
@@ -72,7 +79,7 @@ function BookingCard({ farm, startDate, endDate, totalPrice, status, isPast }) {
             </button>
 
             <button className={styles.mapBtn} onClick={handleMap}>
-              <FaLocationDot size = {18}/>
+              <FaLocationDot size={18} />
               Location
             </button>
           </div>

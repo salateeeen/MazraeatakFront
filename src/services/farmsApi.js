@@ -12,6 +12,12 @@ export const fetchFarms = function (filters="") {
     }
 };
 
+export const fetchFarmsName = function (name="") {
+    return async function () {
+        return fetchFor(`http://localhost:3000/api/v1/farms/farmsName?farmName=${name}`);
+    }
+};
+
 export const fetchMyFarms = function () {
     return fetchFor(`http://localhost:3000/api/v1/farms/myFarms`);
 };

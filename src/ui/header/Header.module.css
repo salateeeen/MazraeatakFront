@@ -29,34 +29,28 @@
     color: var(--white-green);
 }
 
-.search {
+.container {
     width: 300px;
-    height: 40px;
     transition: 2s ease;
-    border-radius: 1rem;
-    overflow: hidden;
 }
-
-.register{
-    display: flex;
-    gap: 10px;
-}
-
-
 
 div[is-home="true"] {
-    transform: translateY(100%);
+    transform: translateY(42.5px);
 }
-
 
 div[is-scroll="true"] {
     transform: translateY(0);
 }
 
+.register {
+    display: flex;
+    gap: 10px;
+}
 
 .header:has(div[is-scroll="true"]) {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
+
 
 @media (max-width: 1024px) {
     .search {

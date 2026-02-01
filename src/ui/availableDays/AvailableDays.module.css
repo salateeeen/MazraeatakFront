@@ -18,7 +18,7 @@
 
  .day[data-available="false"] {
      background-color: #e03131;
-     border: 4px solid #c92a2a;
+     border: 1px solid var(--color-border);
      color: #ece6e6;
      box-shadow: 0 2px 4px #ffa8a8;
  }
@@ -26,7 +26,7 @@
 
  .day[data-available="true"] {
      background-color: #1c7ed6;
-     border: 4px solid #228be6;
+     border: 1px solid var(--color-border);
      box-shadow: 0 2px 4px #d0ebff;
      color: #e7f5ff;
  }

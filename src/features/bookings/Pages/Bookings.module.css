@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    height: 85vh;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-border);
+    height: 90%;
+    width: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bookings {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.bookings h2 {
+    align-self: center;
+}
+

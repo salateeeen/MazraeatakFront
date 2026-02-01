@@ -1,0 +1,27 @@
+.anchor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    gap: 3px;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.anchor:hover > * {
+    cursor: pointer;
+    color: var(--green-light);
+    fill: var(--green-light);
+    stroke: var(--green-light);
+}
+
+.anchor h3 {
+    color: var(--green-dark);
+}
+
+.arrow{
+    fill: var(--green-dark);
+    stroke: var(--green-dark);
+}

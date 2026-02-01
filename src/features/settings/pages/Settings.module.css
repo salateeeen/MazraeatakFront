@@ -1,0 +1,15 @@
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    min-height: 75vh;
+    gap: 0.8rem;
+}
+
+.layout > *{
+    height: fit-content;
+    padding: 0.5rem;    
+}
+
+.layout > :nth-child(-n+2) {
+    border-right: 1px solid #e3e1e1;
+}

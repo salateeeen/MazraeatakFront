@@ -1,0 +1,27 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.form input,
+.form select,
+.form button {
+  height: 40px;
+}
+
+.form button {
+  width: 100%;
+}
+
+.price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.btns {
+  display: flex;
+  gap: 0.25rem;
+}
+

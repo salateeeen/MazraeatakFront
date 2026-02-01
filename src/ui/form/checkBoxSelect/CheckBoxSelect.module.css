@@ -1,0 +1,37 @@
+  .container {
+    position: relative;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    position: absolute;
+    padding: 0.4rem;
+    gap: 0.4rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 4px 12px var(--green-light);
+    animation: fadeIn 0.8s ease forwards;
+  }
+
+  .fadeIn {
+    animation: fadeIn 0.8s ease forwards;
+  }
+
+  .fadeOut {
+    animation: fadeOut 0.8s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      top: 90%;
+    }
+
+    to {
+      opacity: 1;
+      top: 120%;
+    }
+  }

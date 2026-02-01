@@ -1,0 +1,38 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #fafafa;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.code {
+  font-size: 9rem;
+  font-weight: 700;
+  color: var(--green-dark); /* Indigo */
+  margin: 0;
+}
+
+.text {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background: var(--green-dark);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}

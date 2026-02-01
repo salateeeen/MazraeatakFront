@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.container input {
+  height: 40px;
+}
+
+
+.container>h3 {
+  align-self: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: #575757;
+  white-space: wrap;
+}

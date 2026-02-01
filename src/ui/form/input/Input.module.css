@@ -1,0 +1,34 @@
+.container {
+    width: 100%;
+}
+
+.composition {
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    transition: 0.4s ease;
+    border: 1px solid #d1d5db;
+    outline: none;
+    color: #363636;
+}
+
+.input:focus {
+    box-shadow: 0 0 0 2px var(--green-light);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.5rem;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+  overflow: auto;
+  gap: 1rem;
+}
+
+.list::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 25px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.18),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.list.shadow::before {
+  opacity: 1;
+}

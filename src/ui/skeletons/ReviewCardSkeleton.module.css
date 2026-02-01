@@ -1,0 +1,50 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile p:first-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile p:last-child {
+  width: 140px;
+  height: 14px;
+}
+
+/* ---------- Rate & Date ---------- */
+.rateDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rateDate p:first-child {
+  width: 90px;
+  height: 14px;
+}
+
+.rateDate p:last-child {
+  width: 70px;
+  height: 12px;
+}
+
+/* ---------- Message ---------- */
+.message p {
+  height: 60px;
+  border-radius: 8px;
+}

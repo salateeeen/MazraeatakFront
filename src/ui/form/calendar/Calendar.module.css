@@ -1,0 +1,17 @@
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.5);
+}
+
+input[type="date"]::-webkit-datetime-edit {
+  color: #333;
+  font-size: 18px;
+}
+
+input[type="date"]:focus {
+  outline: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}

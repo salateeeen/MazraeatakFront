@@ -1,0 +1,58 @@
+.card {
+  background-color: var(--color-bg-card);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1rem;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  overflow: hidden;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info p {
+  background-color: #e0e0e0;
+  border-radius: var(--radius-md);
+}
+
+.info p:nth-child(1) {
+  width: 80%;
+  height: 18px;
+  /* rating */
+}
+
+.info p:nth-child(2) {
+  width: 45%;
+  height: 15px;
+  /* city */
+}
+
+.info p:nth-child(3) {
+  width: 35%;
+  height: 15px;
+  /* price */
+}
+
+.days {
+  display: flex;
+  gap: 6px;
+}
+
+.days span {
+  flex: 1;
+  height: 22px;
+  border-radius: 13px 6px 16px 8px / 8px 14px 6px 12px;
+}
+

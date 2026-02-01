@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-lg);
+}
+
+.main {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-lg);
+}

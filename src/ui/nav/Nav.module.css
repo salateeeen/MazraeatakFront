@@ -1,0 +1,63 @@
+.nav {
+  background: linear-gradient(var(--gradient-primary));
+  color: #ffffff;
+  height: 80px;
+  padding: 0 1rem;
+  margin-top: -15px;
+
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.list li svg {
+  width: 20px;
+  height: 20px;
+}
+
+.list li:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+.list li::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: width 0.25s ease;
+}
+
+.list li:hover::after {
+  width: 55%;
+}

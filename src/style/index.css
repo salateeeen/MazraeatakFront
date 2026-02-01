@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@600&display=swap');
+
+:root {
+  /* 🎨 Colors */
+  --color-bg-container: #ffffff;
+  --color-bg-card: #fffffa;
+  --color-bg-card-hover: #f0f5ee;
+  --color-border: #f3f0f0;
+  --color-scrollbar: #8e8c8ce1;
+  --green-light: #8bc34a;
+  --green-dark: #43a047;
+  --white-green: #f4fce3;
+  --black-green: #2e302d;
+
+  /* 🌈 Gradients */
+  --gradient-primary: -135deg, var(--green-light), var(--green-dark);
+  --gradient-secondary: 90deg, #16a085, #1abc9c;
+
+
+  /* 📏 Radius */
+  --radius-sm: 0.2rem;
+  --radius-md: 0.3rem;
+  --radius-lg: 0.6rem;
+  --radius-xl: 1rem;
+
+  /* ⚙️ Layout */
+  --gap-sm: 0.3rem;
+  --gap-md: 0.5rem;
+  --gap-lg: 1rem;
+  --gap-xl: 1.2rem;
+
+  /* 💫 States */
+  --hover-opacity: 0.75;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--black-green);
+  background-color: #fff;
+  direction: ltr;
+  padding: 5px;
+  white-space: nowrap;
+}
+
+
+li {
+  list-style: none;
+}

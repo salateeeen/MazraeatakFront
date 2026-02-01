@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.item:hover {
+  border-color: var(--green-light);
+  background-color: #f7fee7;
+}
+
+.item h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.item p {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.item input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--green-dark);
+}

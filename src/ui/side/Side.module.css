@@ -1,0 +1,39 @@
+.list {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border-left: 4px solid transparent;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.end {
+    justify-content: space-between;
+}
+
+.list li:hover {
+    background-color: var(--color-bg-card-hover);
+}
+
+.list .active {
+    border-left: 4px solid var(--green-light);
+    color: var(--green-dark);
+    stroke: var(--green-dark);
+}
+
+.list .active .icon {
+    fill: var(--green-dark);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

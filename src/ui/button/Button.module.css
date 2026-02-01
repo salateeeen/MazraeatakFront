@@ -1,0 +1,33 @@
+.btn {
+    height: fit-content;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    color: var(--white-green);
+    background-color: var(--green-dark);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: var(--green-light);
+    transform: scale(1.01);
+}
+
+.btn:active {
+    background: var(--green-dark);
+    transform: scale(0.99);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    background: var(--green-dark);
+    box-shadow: none;
+    transform: none;
+    pointer-events: none;
+    cursor: not-allowed;
+}

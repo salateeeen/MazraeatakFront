@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  gap: 0.25rem;
+  transition: 0.2s ease;
+}
+
+.star {
+  stroke: #ffca28;
+}
+
+.filled {
+  fill: #ffca28;
+}

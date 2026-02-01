@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.container select {
+  height: 40px;
+}
+
+.info {
+  padding: 14px;
+  border-radius: 12px;
+  background-color: #f7fee7;
+  color: var(--green-dark);
+  font-size: 15px;
+}

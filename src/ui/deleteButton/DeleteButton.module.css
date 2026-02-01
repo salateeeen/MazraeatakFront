@@ -1,0 +1,14 @@
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #8e8c8ce1;
+  border-radius: 50%;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.delete:hover{
+    transform: scale(1.1);
+}

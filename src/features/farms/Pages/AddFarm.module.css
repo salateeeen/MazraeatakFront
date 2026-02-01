@@ -1,0 +1,39 @@
+.container{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: 2px dashed #ccc;
+  background-color: #fafafa;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.imgContainer:hover {
+  background-color: #f0fff0;
+  border-color: var(--green-light);
+}
+
+.img {
+  width: 50%;
+  height: 50%;
+  color: var(--black-green);
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    grid-column: 1;
+    height: 250px;
+  }
+}

@@ -1,0 +1,10 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: var(--color-bg-container);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}

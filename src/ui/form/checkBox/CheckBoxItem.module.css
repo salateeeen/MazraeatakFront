@@ -1,0 +1,49 @@
+.label {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-height: 40px;
+
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--green-dark);
+  color: var(--white-green);
+  overflow:hidden;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+.label:hover {
+  transform: translateY(-3px);
+}
+
+.label:has(input:checked) {
+  background: var(--green-light);
+  box-shadow: 0 0 10px #94c957;
+}
+
+.label:has(input:checked)::after {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.span {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  gap: 10px;
+}

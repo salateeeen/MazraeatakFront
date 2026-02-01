@@ -1,0 +1,30 @@
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50%;
+  height: 100%;
+  border-radius: 5px;
+  gap: 5px;
+  overflow: hidden;
+}
+
+/* نفس img */
+.img {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* أول صورة span 2 */
+.img:nth-child(1) {
+  grid-column: span 2;
+}
+
+/* overlay مكان +7 */
+.overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+

@@ -6,6 +6,6 @@
     margin-left: 5px;
     gap: 3px;
     font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--green-dark);
+    font-size: var(--font-size-large);
+    color: var(--accent-primary-strong);
 }

@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./Cards.module.css";
+import Container from "../container/Container";
 
 function Cards({ children, className = "", header }) {
   return (
-    <div className={`${styles.container}`}>
+    <Container className={`${styles.container}`}>
       {header}
       <div className={`${styles.cards}  ${className}`}>{children}</div>
-    </div>
+    </Container>
   );
 }
 

@@ -1,4 +1,4 @@
-import styles from "./Form.module.css";
+import styles from "./Auth.module.css";
 import { useNavigate } from "react-router-dom";
 import { FormProvider, useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";

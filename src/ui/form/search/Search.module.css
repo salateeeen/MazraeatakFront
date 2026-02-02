@@ -4,8 +4,9 @@
 
 .container .search {
     border-radius: 1rem;
-    height: 40px;   
+    height: 40px;
     border: none;
+    background-color: var(--bg-input);
 }
 
 .searchList {
@@ -16,7 +17,7 @@
     display: flex;
     flex-direction: column;
 
-    background-color: #ffffff;
+    background-color: var(--bg-input);
     border-radius: 14px;
     width: 100%;
     max-height: 220px;
@@ -31,20 +32,20 @@
 }
 
 .searchList div {
-    padding: 0.6rem 0.8rem;
-    font-size: 0.9rem;
+    padding: var(--pad-md) var(--pad-lg);
+    font-size: var(--font-size-small);
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.2s, transform 0.15s;
 }
 
 .searchList div:hover {
-    background-color: #f2f7f2;
+    background-color: var(--bg-card-hover);
     transform: translateX(4px);
 }
 
 .searchList div:active {
-    background-color: #e4f0e4;
+    background-color: var(--bg-card-hover);
 }
 
 @keyframes dropdownFade {

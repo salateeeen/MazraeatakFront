@@ -54,8 +54,7 @@ function AddFarmForm({ ref }) {
   });
 
   function onSubmit(data) {
-    console.log(data);
-    // mutate(data);
+    mutate(data);
   }
 
   return (

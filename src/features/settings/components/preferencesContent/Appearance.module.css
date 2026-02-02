@@ -5,7 +5,7 @@
 }
 
 .section h4 {
-  font-size: 15px;
+  font-size: var(--font-size-medium);
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -17,23 +17,23 @@
 
 .options button {
   flex: 1;
-  padding: 10px 0;
+  padding: var(--pad-md) 0;
   border-radius: 10px;
-  border: 1px solid var(--color-border);
-  background-color: #fff;
-  font-size: 14px;
+  border: 1px solid var(--border-default);
+  background-color: var(--bg-container);
+  font-size: var(--font-size-small);
   cursor: pointer;
   transition: 0.2s ease;
 }
 
 .options button:hover {
-  border-color: var(--green-light);
+  border-color: var(--accent-primary-soft);
 }
 
 .options button.active {
-  border-color: var(--green-light);
+  border-color: var(--accent-primary-soft);
   background-color: #f7fee7;
-  color: var(--green-dark);
+  color: var(--accent-primary-strong);
   font-weight: 600;
 }
 

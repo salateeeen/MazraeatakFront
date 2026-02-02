@@ -12,9 +12,15 @@ function Map({
   coordinates,
 }) {
   const [curLat, curLng] = JSON.parse(
-    localStorage.getItem("coordinates") || "[26,32]"
+    localStorage.getItem("coordinates") || "[26,32]",
   );
   const [lng, lat] = coordinates || [curLng, curLat];
+  const savedTheme = localStorage.getItem("theme");
+
+  const LIGHT_TILE = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+
+  const DARK_TILE =
+    "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
 
   return (
     <div className={`${styles.container} ${className}`}>
@@ -24,7 +30,10 @@ function Map({
         className={`${styles.map}`}
         boxZoom={true}
       >
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        <TileLayer
+          url={savedTheme === "dark" ? DARK_TILE : LIGHT_TILE}
+          attribution="&copy; OpenStreetMap contributors"
+        />
         {toEdit && <GetLocation onSelect={onSelect} />}
         {toShow && <OneMarker lat={lat} lng={lng} />}
       </MapContainer>

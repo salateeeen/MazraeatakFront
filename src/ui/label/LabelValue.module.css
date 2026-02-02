@@ -4,12 +4,14 @@
 }
 
 .label {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: var(--font-size-medium);
+  font-weight: 600;
+  color: var(--green-black);
 }
 
 
 .value {
-  font-size: 0.95rem;
+  font-size:var(--font-size-medium);
   font-weight: 500;
+  color: var(--green-black);
 }

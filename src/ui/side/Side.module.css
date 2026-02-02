@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.5rem;
+    padding: var(--pad-md);
     border-left: 4px solid transparent;
     transition: 0.3s ease;
     cursor: pointer;
@@ -19,17 +19,17 @@
 }
 
 .list li:hover {
-    background-color: var(--color-bg-card-hover);
+    background-color: var(--bg-card-hover);
 }
 
 .list .active {
-    border-left: 4px solid var(--green-light);
-    color: var(--green-dark);
-    stroke: var(--green-dark);
+    border-left: 4px solid var(--accent-primary-soft);
+    color: var(--accent-primary-strong);
+    stroke: var(--accent-primary-strong);
 }
 
 .list .active .icon {
-    fill: var(--green-dark);
+    fill: var(--accent-primary-strong);
 }
 
 .icon {

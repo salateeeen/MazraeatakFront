@@ -7,21 +7,21 @@
     margin-left: 5px;
     gap: 3px;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: var(--font-size-large);
 }
 
 .anchor:hover > * {
     cursor: pointer;
-    color: var(--green-light);
-    fill: var(--green-light);
-    stroke: var(--green-light);
+    color: var(--accent-primary-soft);
+    fill: var(--accent-primary-soft);
+    stroke: var(--accent-primary-soft);
 }
 
 .anchor h3 {
-    color: var(--green-dark);
+    color: var(--accent-primary-strong);
 }
 
 .arrow{
-    fill: var(--green-dark);
-    stroke: var(--green-dark);
+    fill: var(--accent-primary-strong);
+    stroke: var(--accent-primary-strong);
 }

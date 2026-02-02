@@ -4,10 +4,10 @@
 }
 
 .container span {
-    padding: 0 5px;
-    color: var(--black-green);
-    font-weight: 600;
-    font-size: 0.8rem;
+    margin-left: 5px;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: var(--font-size-smaller);
 }
 
 .row {

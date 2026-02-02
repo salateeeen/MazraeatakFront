@@ -16,7 +16,6 @@ export const createBooking = function (farmId) {
 
             if (!res.ok) {
                 const errorData = await res.json();
-                console.log(errorData.message);
                 throw new Error(errorData.message || "Unknown error");
             }
 

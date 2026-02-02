@@ -29,7 +29,7 @@ function DeleteButton({className, id}) {
       onClick={handleDelet}
       disabled={isPending}
     >
-      <Trash2 />
+      <Trash2 className={styles.icon} />
     </button>
   );
 }

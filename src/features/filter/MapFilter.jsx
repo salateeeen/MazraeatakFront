@@ -3,9 +3,9 @@ import { MapPinHouse, X } from "lucide-react";
 import Input from "@/ui/form/input/Input";
 import { useNavigate } from "react-router-dom";
 import { getCurrentPosition } from "@/utils/handleLocation";
-import SelectCity from "./SelectCity";
+import SelectCity from "../map/forms/SelectCity";
 
-function MapForm({ color, className }) {
+function MapForm({ className }) {
   const navigate = useNavigate();
   const mapForm = useForm({
     defaultValues: {
@@ -60,7 +60,6 @@ function MapForm({ color, className }) {
           onKeyDown={onKeyDown}
         >
           <MapPinHouse
-            color={color}
             alt="choose in map"
             onClick={getCurrentPosition}
           />

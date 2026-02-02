@@ -5,7 +5,7 @@
     transform: translate(-50%, -50%);
 
     width: 100%;
-    padding: 1rem;
+    padding: var(--pad-xl);
     text-align: center;
 
     display: flex;
@@ -13,16 +13,17 @@
     align-items: center;
     gap: 0.35rem;
 
-    color: #555;
+   
+    color: var(--text-muted);
 }
 
 .title {
-    font-size: 1.3rem;
+    font-size: var(--font-size-large);
     font-weight: 600;
-    color: #374151;
+    color: var(--text-primary);
 }
 
 .message {
-    font-size: 0.95rem;
-    color: #6b7280;
+    font-size:var(--font-size-small);
+    color: var(--text-secondary);
 }

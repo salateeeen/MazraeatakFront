@@ -1,11 +1,10 @@
 import { FormProvider, useForm } from "react-hook-form";
-import styles from "./styles/Filter.module.css";
-import mapStyles from "./styles/Map.module.css";
-import inputsStyles from "./styles/Inputs.module.css";
+import styles from "./Filter.module.css";
+import mapStyles from "./Map.module.css";
 import { Earth } from "lucide-react";
 
 import Map from "@features/map/components/Map";
-import MapForm from "@features/map/forms/MapForm";
+import MapForm from "@/features/filter/MapFilter";
 import Button from "@/ui/button/Button";
 import Input from "@/ui/form/input/Input";
 import CheckBoxFacilities from "./CheckBoxFacilities";
@@ -56,7 +55,7 @@ function Filter() {
   }
 
   return (
-    <Container className={`${styles.container} ${inputsStyles.container}`}>
+    <Container className={`${styles.container} ${styles.container}`}>
       <div className={mapStyles.mapContainer}>
         <Map className={mapStyles.map} toShow={true} />
 
@@ -67,7 +66,7 @@ function Filter() {
           </div>
 
           <div>
-            <MapForm color={`#2e302d`} className={`${mapStyles.mapForm}`} />
+            <MapForm className={`${mapStyles.mapForm}`} />
           </div>
         </div>
       </div>
@@ -81,7 +80,7 @@ function Filter() {
             <CheckBoxFacilities />
           </div>
 
-          <div className={inputsStyles.inputs}>
+          <div className={styles.inputs}>
             <Input type="date" name="availble in" display="row" />
             <Input name="max price" display="row" />
             <Select name={`rating`} display={"row"} options={rating} />

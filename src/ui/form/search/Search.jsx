@@ -14,7 +14,7 @@ function Search({ className = "", onClick, onChange, children }) {
         onChange={onChange}
         autoComplete={"off"}
       >
-        <SearchIcon size={20} color="#999" onClick={onClick} />
+        <SearchIcon size={20} onClick={onClick} />
       </Input>
       <div className={styles.searchList}>{children}</div>
     </div>

@@ -22,7 +22,6 @@ function Header() {
   const isHome = lacation.pathname.includes(`home`);
   const { data, isPending, error } = useFarmsName(search);
   const searchRef = useRef(null);
-  console.log(data);
 
   useEffect(() => {
     function handleScroll() {

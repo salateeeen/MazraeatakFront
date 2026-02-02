@@ -2,19 +2,44 @@
 
 :root {
   /* 🎨 Colors */
-  --color-bg-container: #ffffff;
-  --color-bg-card: #fffffa;
-  --color-bg-card-hover: #f0f5ee;
-  --color-border: #f5f3f3;
-  --color-scrollbar: #8e8c8ce1;
-  --green-light: #8bc34a;
-  --green-dark: #43a047;
+  /* Background Color */
+  --bg-page: #fff;
+  --bg-container: #fff;
+  --bg-surface-soft: #fafafa;
+  --bg-card: #fffffa;
+  --bg-card-hover: #f9f9f9;
+  --bg-input: #f9f9f9;
+  --bg-input-hover: #f7fee7;
+
+  /* Text */
+  --text-primary: #2e302d;
+  --text-secondary: #6b7280;
+  --text-muted: #555;
+  --text-input: #444444;
+  --text-icon: #777;
+
   --white-green: #f4fce3;
-  --black-green: #2e302d;
+  --accent-soft: #f4fce3;
+
+  /* Border */
+  --border-default: #f5f3f3;
+  --border-input: #d1d5db;
+
+  /* Scrollbar */
+  --color-scrollbar: #8e8c8ce1;
+
+  /* Brand / Accent */
+  --accent-primary-soft: #8bc34a;
+  --accent-primary-strong: #43a047;
+
+  /* skeleton */
+  --skeleton-base: #f0f0f0;
+  --skeleton-highlight: #e6e6e6;
+
 
   /* 🌈 Gradients */
-  --gradient-primary: -135deg, var(--green-light), var(--green-dark);
-  --gradient-secondary: 90deg, #16a085, #1abc9c;
+  --gradient-primary: linear-gradient(-135deg, var(--accent-primary-soft), var(--accent-primary-strong));
+  --gradient-secondary: linear-gradient(90deg, #16a085, #1abc9c);
 
 
   /* 📏 Radius */
@@ -29,6 +54,25 @@
   --gap-lg: 1rem;
   --gap-xl: 1.2rem;
 
+  /* Font */
+  --font-size-base: 20px;
+  --font-size-smaller: clamp(0.65rem, 1.5vw, 0.75rem);
+  --font-size-small: clamp(0.825rem, 1.5vw, 0.875rem);
+  --font-size-medium: clamp(0.9rem, 2vw, 1rem);
+  --font-size-large: clamp(1.25rem, 3vw, 1.4rem);
+  --font-size-xl: clamp(1.5rem, 4vw, 2rem);
+  --font-size-xxl: clamp(2rem, 5vw, 3rem);
+
+  /* Padding */
+  --pad-2xs: 0.1rem;
+  --pad-xs: 0.2rem;
+  --pad-sm: 0.4rem;
+  --pad-md: 0.6rem;
+  --pad-lg: 0.8rem;
+  --pad-xl: 1rem;
+  --pad-2xl: 1.2rem;
+  --pad-3xl: 1.6rem;
+
   /* 💫 States */
   --hover-opacity: 0.75;
 }
@@ -39,14 +83,68 @@
   box-sizing: border-box;
 }
 
+
+html.dark {
+  /* Background Color */
+  --bg-page: #121212;
+  --bg-container: #1e1e1e;
+  --bg-card: #262626;
+  --bg-card-hover: #333333;
+  --bg-surface-soft: #2a2a2a;
+  --bg-input: #232323;
+  --bg-input-hover: #1f3a2a;
+
+  /* Text */
+  --text-primary: #fdfdfd;
+  --text-secondary: #bec6c2;
+  --text-muted: #d1d5db;
+  --text-input: #e7e6e6;
+  --text-icon: #aaa;
+
+  --accent-soft: #344d24;
+
+  /* Border */
+  --border-default: #333;
+  --border-input: #444;
+
+  /* Scrollbar */
+  --color-scrollbar: #555555;
+
+  /* Brand / Accent */
+  --accent-primary-soft: #66bb6a;
+  /* light green for dark bg */
+  --accent-primary-strong: #43a047;
+  /* same strong green */
+
+  /* Skeleton */
+  --skeleton-base: #2a2a2a;
+  --skeleton-highlight: #3a3a3a;
+
+
+  /* 🌈 Gradients */
+  --gradient-primary: linear-gradient(135deg,
+      #43a047 0%,
+      #43a047 45%,
+      #43a047 100%);
+
+
+
+
+}
+
+html {
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-base);
+  font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--black-green);
-  background-color: #fff;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
   direction: ltr;
-  padding: 5px;
   white-space: nowrap;
 }
+
 
 
 li {

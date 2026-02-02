@@ -46,7 +46,7 @@ function Rate({ open, setOpen, farmName, farmId }) {
           <div className={styles.overlay} onClick={handleClose}></div>
           <FormProvider {...rateForm}>
             <form
-              className={styles.form}
+              className={styles.container}
               onSubmit={rateForm.handleSubmit(onSubmit)}
             >
               <h1 className={styles.title}>

@@ -23,7 +23,7 @@
 }
 
 .description {
-  font-size: 0.8rem;
-  color: #575757;
+  font-size: var(--font-size-small);
+  color: var(--text-secondary);
   white-space: wrap;
 }

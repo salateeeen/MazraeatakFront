@@ -7,7 +7,7 @@
 
 .form p {
     text-align: center;
-    color: #6b7280;
+    color: var(--text-secondary);
 }
 
 .form input {
@@ -15,7 +15,7 @@
 }
 
 .link {
-    color: var(--green-dark);
+    color: var(--accent-primary-strong);
     cursor: pointer;
     font-weight: 600;
 }

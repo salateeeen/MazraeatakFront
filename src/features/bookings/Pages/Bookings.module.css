@@ -9,7 +9,7 @@
 .container::after {
     content: "";
     position: absolute;
-    background-color: var(--color-border);
+    background-color: var(--border-default);
     height: 90%;
     width: 2px;
     left: 50%;

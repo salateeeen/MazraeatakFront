@@ -10,21 +10,21 @@
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  border: 1px solid var(--color-border);
-  background-color: #fafafa;
+  border: 2px dashed var(--border-default);
+  background-color: var(--bg-card);
   transition: 0.3s ease;
   cursor: pointer;
 }
 
 .imgContainer:hover {
-  background-color: #f0fff0;
-  border-color: var(--green-light);
+  background-color: var(--bg-card-hover);
+  border-color: var(--accent-primary-soft);
 }
 
 .img {
   width: 50%;
   height: 50%;
-  color: var(--black-green);
+  color: var(--text-primary);
 }
 
 @media (max-width: 900px) {

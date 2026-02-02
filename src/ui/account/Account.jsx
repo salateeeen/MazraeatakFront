@@ -26,15 +26,29 @@ function Account() {
     localStorage.removeItem("token");
     window.location.reload();
   }
-
+  
   function handleSettings(e) {
     setIsShow(false);
     navigate(`/app/settings/account`);
   }
-
+  
   function toggleTheme() {
     setIsDark((prev) => !prev);
+    
     document.documentElement.classList.toggle("dark");
+    // تخزين الاختيار
+    if (document.documentElement.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+    
+    window.location.reload();
+  }
+  
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.documentElement.classList.add("dark");
   }
 
   if (isPending) return null;

@@ -6,13 +6,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     position: absolute;
-    padding: 0.4rem;
+    padding: var(--pad-sm);
     gap: 0.4rem;
     border-radius: 0.5rem;
-    background-color: white;
+    background-color: var(--bg-card);
     width: 100%;
     z-index: 1;
-    box-shadow: 0 4px 12px var(--green-light);
+    box-shadow: 0 4px 12px var(--accent-primary-soft);
     animation: fadeIn 0.8s ease forwards;
   }
 

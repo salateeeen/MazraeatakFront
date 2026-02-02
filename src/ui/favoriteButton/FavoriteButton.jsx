@@ -41,7 +41,7 @@ function FavoriteButton({className, id, isFavorite}) {
       onClick={handleFav}
       disabled={isFavoriting}
     >
-      <Heart size={22} className={`${fav ? styles.fav : styles.notFav}`} />
+      <Heart size={20} className={`${styles.icon} ${fav ? styles.fav : styles.notFav}`} />
     </button>
   );
 }

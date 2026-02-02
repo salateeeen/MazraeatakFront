@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 250px;
-  padding: 20px 0;
-  background: linear-gradient(var(--gradient-primary));
+  padding: var(--pad-xl) 0;
+  background: var(--gradient-primary);
   color: var(--white-green);
 }
 
@@ -39,7 +39,7 @@
 .social a {
   margin: 0 8px;
   color: inherit;
-  font-size: 20px;
+  font-size: var(--font-size-large);
 }
 
 .social a:hover {

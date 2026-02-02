@@ -7,20 +7,20 @@
 .actionBox {
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border: 1px solid var(--color-border);
+  background: var(--bg-container);
+  border: 1px solid var(--border-default);
   border-radius: 12px;
-  padding: 0.5rem 1rem;
+  padding: var(--pad-md) var(--pad-xl);
   gap: 0.6rem;
 }
 
 .actionBox h4 {
-  font-size: 0.8rem;
+  font-size: var(--font-size-small);
   font-weight: 600;
 }
 
 .actionBox p {
   margin: 2px 0 0;
-  font-size: 0.75rem;
-  color: #6b7280;
+  font-size: var(--font-size-smaller);
+  color: var(--text-secondary);
 }

@@ -7,27 +7,27 @@
 
   background: #fafafa;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 var(--pad-xl);
 }
 
 .code {
   font-size: 9rem;
   font-weight: 700;
-  color: var(--green-dark); /* Indigo */
+  color: var(--accent-primary-strong); /* Indigo */
   margin: 0;
 }
 
 .text {
-  font-size: 1.25rem;
-  color: #555;
+  font-size: var(--font-size-large);
+  color: var(--text-muted);
   margin-bottom: 1.5rem;
 }
 
 .btn {
-  padding: 0.75rem 1.5rem;
-  background: var(--green-dark);
-  color: #fff;
-  font-size: 1rem;
+  padding: var(--pad-lg) var(--pad-3xl);
+  background: var(--accent-primary-strong);
+  color: var(--bg-container);
+  font-size: var(--font-size-medium);
   border-radius: 12px;
   text-decoration: none;
   transition: 0.2s ease-in-out;

@@ -9,9 +9,9 @@
 }
 
 .info {
-  padding: 14px;
+  padding: var(--pad-md);
   border-radius: 12px;
-  background-color: #f7fee7;
-  color: var(--green-dark);
-  font-size: 15px;
+  background-color: var(--bg-input-hover);
+  color: var(--accent-primary-strong);
+  font-size: var(--font-size-medium);
 }

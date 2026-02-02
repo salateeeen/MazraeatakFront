@@ -2,11 +2,11 @@
   display: grid;
   grid-template-columns: 120px 1fr;
   gap: 1rem;
-  padding: 0.9rem;
+  padding: var(--pad-lg);
 
-  background: var(--color-bg-card);
+  background: var(--bg-card);
   border-radius: 16px;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--border-default);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.075);
 
   transition: 0.2s ease;
@@ -39,9 +39,9 @@
 }
 
 .title {
-  font-size: 1rem;
+  font-size: var(--font-size-medium);
   font-weight: 600;
-  color: var(--black-green);
+  color: var(--text-primary);
 }
 
 /* Status (BIG DOT) */
@@ -50,10 +50,11 @@
   align-items: end;
   justify-content: center;
   gap: 0.25rem;
-  font-size: 0.8rem;
+  font-size: var(--font-size-small);
   font-weight: 600;
   text-transform: capitalize;
-  color: #374151;
+  color: var(--text-primary);
+
 }
 
 .dot {
@@ -78,25 +79,25 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.9rem;
+  font-size: var(--font-size-small);
 }
 
 .date {
   font-weight: 600;
-  color: #374151;
+  color: var(--text-primary);
 }
 
 .arrow {
-  color: rgb(87, 87, 94);
+  color: var(--text-muted);
 }
 
 .price {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.95rem;
+  font-size: var(--font-size-small);
   font-weight: 700;
-  color: #3e3e3e;
+  color: var(--text-primary);
 }
 
 .actions {
@@ -107,9 +108,9 @@
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.4rem 0.7rem;
+  padding: var(--pad-sm) var(--pad-lg);
   border-radius: 8px;
-  font-size: 0.85rem;
+  font-size: var(--font-size-small);
   font-weight: 600;
   border: none;
   cursor: pointer;

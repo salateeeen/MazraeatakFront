@@ -33,7 +33,7 @@ function Location() {
         required={true}
         onClick={handleOpen}
       >
-        <MapPin />
+        <MapPin/>
       </Input>
 
       {open && (

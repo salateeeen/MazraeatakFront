@@ -7,9 +7,9 @@
 
 .layout > *{
     height: fit-content;
-    padding: 0.5rem;    
+    padding: var(--pad-md);    
 }
 
 .layout > :nth-child(-n+2) {
-    border-right: 1px solid #e3e1e1;
+    border-right: 1px solid var(--border-default);
 }

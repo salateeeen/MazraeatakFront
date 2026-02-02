@@ -2,15 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border: 1px solid var(--color-border);
+  background-color: var(--bg-surface-soft);
+  border: none;
   border-radius: 50%;
   transition: 0.2s ease;
   cursor: pointer;
 }
 
-
-.favorite:hover{
+.favorite:hover {
   transform: scale(1.1);
 }
 

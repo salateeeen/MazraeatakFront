@@ -16,14 +16,14 @@
   gap: 0.4rem;
   align-items: end;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   margin-bottom: 1rem;
-  color: var(--green-dark);
+  color: var(--accent-primary-strong);
 }
 
 .title span {
-  font-size: 1.8rem;
-  color: var(--black-green);
+  font-size: var(--font-size-xl);
+  color: var(--text-primary);
   font-weight: 700;
 }
 
@@ -37,8 +37,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  font-size: 1rem;
-  color: #393a39;
+  font-size: var(--font-size-medium);
+  color: var(--text-primary);
 }
 
 .submitBtn {
